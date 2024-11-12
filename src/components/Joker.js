@@ -1,6 +1,5 @@
 import React from 'react'
 export default function Joker({setup,punchline}){
- 
     return(
         
         <div className='joker'>

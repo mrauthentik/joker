@@ -1,0 +1,38 @@
+export default [
+    {
+        id:'1',
+        title:"Wonder Land",
+        location:"Abuja",
+        googleMaps:'googlelink',
+        startDate:"24th December 2024",
+        endDate:'25th December 2024',
+        img:'/images/photo (2).jpg',
+    },
+    {
+        id:'2',
+        title:"Zuma Rock",
+        location:"Abuja",
+        googleMaps:'googlelinks',
+        startDate:"20th April 2021",
+        endDate:'21th April 2021',
+        img:'/images/photo (3).jpg',
+    },
+    {
+        id:'3',
+        title:"Nigra's Fall",
+        location:"Canada",
+        googleMaps:'googlelinks',
+        startDate:"11th January 2018",
+        endDate:'15th January 2018',
+        img:'/images/photo (4).jpg',
+    },
+    {
+        id:'4',
+        title:"Glass Bridge",
+        location:"China",
+        googleMaps:'googlelinks',
+        startDate:"8th September 2017",
+        endDate:'11th September 2017',
+        img:'/images/photo (5).jpg',
+    },
+]

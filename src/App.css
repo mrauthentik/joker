@@ -41,3 +41,53 @@ section{
 section >h2{
   color:teal;
 }
+main{
+  padding: 36px;
+}
+.memeHeader{
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+  height: 65px;
+  padding: 20px;
+}
+.meme-header-img{
+  height: 100%;
+  margin-right: 6px;
+}
+.meme-title{
+  font-size: 20px;
+  margin-right: auto;
+}
+.meme-project{
+  font-size: 12px;
+  font-weight: 500;
+}
+.form{
+  display: grid;
+  grid-template: 40px 40px;
+  gap: 17px;
+}
+.form-input{
+  border-radius: 5px;
+  /* width: 10px; */
+  border: 1px solid #D5D4D8;
+  font-family: 'Karla', sans-serif;
+  text-indent: 5px;
+}
+input[type="text"]{
+  height: 30px;
+  border-radius: 3px;
+}
+
+.form-button{
+  grid-column: 1 / -1;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}

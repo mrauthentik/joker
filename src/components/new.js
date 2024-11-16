@@ -3,6 +3,15 @@ export default function New(){
       const itemsElement = items.map((list)=>{
         return <p>{list}</p>
       })
+ 
+      function greeting(name){
+        const date = new Date()
+        const hours = date.getHours() 
+        const minute = date.getMinutes()
+        console.log(hours + ':' + minute)  
+      }
+      greeting("Bob ")
+
 
    function additem(){
      return itemsElement

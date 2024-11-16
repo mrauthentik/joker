@@ -7,6 +7,7 @@ import Main from './components/main';
 import Meme from './MemeHeader';
 import MemeMain from './components/meme';
 import New from './components/new';
+import State from './components/useState';
 function App() {
   const jokeElements = jokesData.map((jokes)=>{
     return ( <Joker setup={jokes.setup}
@@ -30,6 +31,7 @@ function App() {
       <MemeMain />
       <thing />
       <New />
+     <State />
     </div>
   )
 }

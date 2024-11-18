@@ -1,8 +1,19 @@
 import React from "react";
 export default function State(){
 let [important,setIsImportant] = React.useState(0)
+const [isDarkMode, setIsDarkMode] = React.useState(false)
+  
+//   Setting up my darkmode and light mode
 
-    
+function toggleTheme(){
+    setIsDarkMode((prevState)=> !prevState)
+}
+
+const themeStyles = {
+    backgroundColor: isDarkMode ? "#333" : "#fff",
+    color: isDarkMode ? '#fff' : "#333"
+}
+
 function increment(){
     setIsImportant(prevCount => prevCount + 1)
     console.log("increment button was clicked")
@@ -20,7 +31,9 @@ function decrement(){
     }
 
     return(
-        <div>
+        <div style={themeStyles}>
+            <h2>{isDarkMode ? "Dark Mode" : 'Light Mode'}</h2>
+            <button onClick={toggleTheme}>Switch to {isDarkMode ? "Light Mode" : "Dark Mode"}</button>
            <h1> {important} </h1>
            <button onClick={answer}> Going Out</button>
            <h1>{isGoingOut ? "Yes" : "No"}</h1>

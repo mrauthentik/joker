@@ -91,3 +91,18 @@ input[type="text"]{
   font-size: 20px;
   background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
 }
+.avatar-img{
+  max-width: 20%;
+}
+.card-name{
+  font-size: 25px;
+  font-weight: 700;
+
+}
+.card-contact{
+  color: rgba(0, 0, 0, 0.582);
+  font-size: 15px;
+}
+.star{
+  width: 30px;
+}

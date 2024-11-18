@@ -8,6 +8,7 @@ import Meme from './MemeHeader';
 import MemeMain from './components/meme';
 import New from './components/new';
 import State from './components/useState';
+import Avatar from './components/avatar';
 function App() {
   const jokeElements = jokesData.map((jokes)=>{
     return ( <Joker setup={jokes.setup}
@@ -32,6 +33,7 @@ function App() {
       <thing />
       <New />
      <State />
+     <Avatar />
     </div>
   )
 }

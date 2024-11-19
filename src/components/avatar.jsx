@@ -5,29 +5,31 @@ export default function Avatar(){
         lastName: "Gonzalez",
         phone: "+234 (0) 8141 6027 33",
         email: "Gonaxalezhon@gmail.com",
-        isFavourite: true,
-        like: true
+        isFavourite: false,
+        like: false
     })
     function star(){
         setContact((prevState=>{
             return {
+                ...prevState,
                 isFavourite: !prevState.isFavourite
             }
         }))
     }
-    function liked(){
-        setContact((prevState =>{
-            return {
-                like: !prevState.like
-            }
-        }))
-    }
+   function liked(){
+    setContact((prevState =>{
+        return{
+            ...prevState,
+            like: !prevState.like
+        }
+    }))
+   }
 
      return (
         <main>
            <h1> Hello welcome to my Avatar</h1>
             <article className="card">
-                <img src="/images/face-card.jpg" className="avatar-img"/>
+                <img src="/images/face-card.jpg" alt="" className="avatar-img"/>
                 <div className="card-info">
                      <img src={contact.isFavourite ? "/images/star-filled.png" : "/images/star-empty.png"} onClick={star} alt="" className="star" />
                      <img src={contact.like ? "/images/heart-filled.png" : "/images/heart-empty.png"} className="star" onClick={liked} alt="" />

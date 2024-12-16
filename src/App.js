@@ -12,6 +12,7 @@ import State from './components/useState';
 import Avatar from './components/avatar';
 import Count from './components/count';
 import boxes from './boxes';
+import Form from './components/form';
 function App() {
   const jokeElements = jokesData.map((jokes)=>{
     return ( <Joker setup={jokes.setup}
@@ -60,6 +61,8 @@ function App() {
      <Count number={count} />
         <button onClick={add}> + </button>
        </div>
+       {squareElement}
+       <Form />
     </div>
   )
 }
